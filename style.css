@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    width: 90%;
+    height: 90vh;
+    background-color:black;
+    display: flex;
+    position: relative;
+    border-radius: 1rem;
+
+}
+
+.leftUp{
+    width: 14rem;
+    height: 14rem;
+    background: linear-gradient(45deg,lightblue,pink,yellow);
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: -.9rem;
+    margin-left: -.9rem;
+    border-radius: 1rem;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    position: absolute;
+    z-index: 2;
+    border-radius: 1rem;
+}
+
+.rightDown{
+    width: 14rem;
+    height: 14rem;
+    background:linear-gradient(135deg,lightblue,pink,yellow);;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: -.9rem;
+    margin-bottom: -.9rem;
+    border-radius: 1rem;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+    background-color: black;
+}
+
+img{
+    width: 10rem;
+    height: 100%;
+}
+
+i{
+    font-size: 1.5rem;
+    margin: 1rem;
+    color: white;
+    box-shadow: 2px 3px 10px black;
+}
+
+.platforms{
+    margin-right: 3rem;
+    margin-top: 2rem;
+}
+
+/* for body css is created */
+
+.body{
+    display: flex;
+    margin: 4rem;
+    background-color: black;
+    justify-content: space-around;
+    color: white;
+}
+
+.about{
+    width: 40%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+#welcome{
+    font-size: 3.5rem;
+    animation-name: fadein;
+    animation-duration: 1s;
+}
+
+#para2,#para1{
+    font-size: 1.1rem;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+
+.achivements{
+    background-color: black;
+    align-self: center;
+    padding: 1rem;
+    line-height: 2rem;
+}
+
+.achive a{
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.55);
+    font-size: 1.5rem;
+}
+
+#para1{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(400deg,lightblue,pink,rgb(124, 124, 205));
+    background-clip: text;
+    color: transparent;
+}
+
+#para2{
+    background: linear-gradient(200deg,lightblue,pink,rgb(124, 124, 205));
+    background-clip: text;
+    color: transparent;
+}
+
+#about{
+    border-image-source: linear-gradient(45deg,black,blue,green);
+    border-image-slice: 1 0 0 0;
+}
+
+i:hover{
+    box-shadow: 2px 3px 20px white;
+    transition-duration: .5s;
+}
+
+.achive a:hover{
+    color: white;
+}
+
+
+.leftUp:hover{
+    background:linear-gradient(45deg,pink,skyblue,yellow)
+}
+
+.rightDown:hover{
+    background:linear-gradient(135deg,pink,skyblue,yellow)
+}
+
+
+
+@keyframes fadein{
+    from{
+        color:rgb(204, 204, 204)
+    }
+    to{
+        background: linear-gradient(45deg, yellow,blue, #feb47b);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+}
+
+#welcome:hover{
+    color: lightblue;
+}
